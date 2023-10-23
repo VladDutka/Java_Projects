@@ -1,0 +1,51 @@
+1. Enter the number of hours it took you to complete the project between
+   the <<< and >>> signs below (eg, <<<10>>>).
+
+   <<<10>>>
+   
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+   between the <<< and >>> signs below (eg, <<<3>>>).
+
+   <<<3>>>
+
+3. Did you receive help from anyone? List their names, status (classmate,
+   CS210 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+
+   ...                ...          ...
+
+4. Provide a short description of how you approached each problem, issues you 
+   encountered, and how you resolved those issues.
+
+   Problem 1 (Board Data Type)
+       Approach: My Approach to baord was to create a int 2D array called tiles and int variables for n,hamming, manhattan, blankpos
+       In the Board method, I create intilize tiles and create a clone of it since it gets changed and checked and didn't want the main
+       varible to be changed. Then I intilize the n to be the length of the tiles. I then create a for double for loop since its a 2D array,
+       then if the location of where that for loop lands on is 0 sets it 0. Then  it would continue. If the tiles does not equal the length times i
+       + j + 1 then add 1 to the hamming. Then I create a second nested for loop with if the tile is empty it continues. it then finds the row and column
+       displacments for the manhattan disctance. For the issolvable, intilized the rowmajor board to be [n * n - 1] and set the row in which the blank tile 
+       is in. Set the int counter to 0. Created a nested for loop to fidn the current of row major. Then found the number of inversions to the solution board 
+       using Inversions.count.  For Iterable I created a nested for loop which if the tiles is empty at the indicies would set zerox to i and zeroy  to j because 
+      Then if zerox and then it would find the neighboring boards and add the to the queue via enqeue. Then it would return. Equals, if the other isnull then it would
+      return false, if other is this then true and then it would get the other class if not equal to get this class return false and default would be board other is set
+      to tiles. tostring changes their format to string and clone tiles creates a copy of tiles. 
+
+       Issues and resolution: I had only on issue and that was for some reason doing Stringbuilding in which I couldn't get a represention of the 
+       string board. I had to lookup an example of a Stringbuilder class and use that as basis for my own string builder. I found the class on GeeksForGeeks.
+
+   Problem 2 (Solver Data Type)
+       Approach: For the Solver class, I set moves to be int and created a linkstack called solution. Then in the class solver I checked if the board is going to be null and would 
+       throw an error if it is. Then if its not empty set PQ to be the MinPQ and then crete a pq.instert to be first search node. The Node pq isn't empty it eh while loop would continue
+       if the node is the goal then it would push the node to the solution, then while the node is not in the previous board push the the board to the soultion. Then break. If not goal then
+       it would go to the next node. moves returns the min moves needed to solve.solution returns the shortest solution. In search node I created a board variable called baord and int called moves
+       and a secrchnode called previous. Then all the variables in searchNode are intilized. Then compareto would comapre the board manhattan and its moves to the other.board and other.moves.
+
+       Issues and resolution: The only issue was board variable and how to work with it. Again with all others things google helped me out, and it turns out to be fairly simple.
+
+5. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+   The project was simplest of the ones I have done. I don't know if it was the project that was easy or if I got better at programming but in about 10 hours I was able to do most of it. 

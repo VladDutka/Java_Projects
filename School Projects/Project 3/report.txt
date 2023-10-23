@@ -1,0 +1,67 @@
+1. Enter the number of hours it took you to complete the project between
+   the <<< and >>> signs below (eg, <<<10>>>).
+   
+   <<<10>>>
+   
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+   between the <<< and >>> signs below (eg, <<<3>>>).
+
+   <<<6>>>
+
+3. Did you receive help from anyone? List their names, status (classmate, 
+   CS210 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+   W3 Schools        Website       To figure out what TERM is.
+   ...                ...          ...
+
+4. Provide a short description of how you approached each problem, issues you 
+   encountered, and how you resolved those issues.
+
+   Problem 1 (Autocomplete Term)
+       Approach: My first was to create a String query and an Int long weight.
+       then for the Term String query it was to see if query had no values which
+       gave error. If it didn't give an error it would itiliaze query and set the weight 
+       to 0. The next thing that I did was check to see if query and weight are null. If 
+       both are given and then itiliaze them. To string just makes the weight and query return 
+       Then in the CompareTo it would compare the other.query to query.Then in Reverseweight order
+       it would reverse the weight by comparing v and w. In prefix Order it creates a new prefix
+       order with the prefix length and then it sorts the term v and w.  
+
+       Issues and resolution: My issue arose with the Term keyword and I had
+       to use google to find the answer. I also struggled to understand compare &
+       compareTo methods in the problem. I found the videos from FreecodeAcademy and
+       GeeksforGeeks helpful in that regard. 
+
+   Problem 2 (Binary Search Deluxe)
+       Approach: The first I did was create if a, key or comparator is null or a has no elements in it
+       either throw an error or return -1. Then I created a low and high variable 
+       then a while loop to go through the elements. I could have done it with a for loop but die to low
+       and high changing depending if the key and array are less than it either adds -1 or +1 to mid.
+       then it returns mid once done. If it can't enter the loop it ruturns a -1. Then I made it do the same
+       thing but in reverse to find the last key rather than first. 
+
+       Issues and resolution: Looked up what comparator is. But other than that it fairly simple. I had trouble
+       when submiting it when the length of the array was less than 0 and I sat there for 30 mins
+       trying to figure out to do. 
+
+   Problem 3 (Autocomplete)
+       Approach: What I did first is set if a null value is passed through terms it would throw an erorr. If it
+       didn't it would itilaze the variable creating this.terms and making a copy of it then sorting it lexicographically.
+       If the prefix is null then throw error. Then if prefix is not null create a new Term prefix. create an int first index and
+       use the binarysearchdelux to find the first term of. Then create a n variable  that keeps track when it matches and stores it 
+       in a int variable matches. Then sorts and reverses the order of the matches array and returns it as matches. The NumberofMatches 
+       makes it so int i and int j returns j - i + 1 as the number of matches found. If no matches could be found return 0;  
+
+       Issues and resolution: The only issue I had was figuring out when and how to Use BinarySerachDeluxe and how to incoporate in my code.
+       Other than that it was fairly simple it just took me a long time.  But, the instructions for the code made it fairly straight forward  
+   
+5. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+   The project was much easier than the other ones and the instructions where more striaght forward. There where
+   issues relating to different cases which I couldn't figure how to fix. The style checker error makes no sense to me
+   and every time I tried to find a solution it would be for eclipse and not VS code which is what I use. The error for die
+   in whcih for some reason it can't calculate properly is also worrisome and I have no Idea how to fix it as well as location.

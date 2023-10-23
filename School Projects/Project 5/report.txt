@@ -1,0 +1,66 @@
+1. Enter the number of hours it took you to complete the project between
+   the <<< and >>> signs below (eg, <<<10>>>).
+
+   <<<14>>>
+   
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+   between the <<< and >>> signs below (eg, <<<3>>>).
+
+   <<<4>>>
+
+3. Did you receive help from anyone? List their names, status (classmate, 
+   CS210 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+
+   ...                ...          ...
+
+4. Provide a short description of how you approached each problem, issues you 
+   encountered, and how you resolved those issues.
+
+   Problem 1 (Brute-force Implementation)
+      Approach: The first thing I did was create a Binary serach tree using Point2D and set to be bst.
+      Then in BrutePointST created an empty table, isempty would return bst.isempty if nothing is passed throough
+      the table. The Size would return the size of ke value pairs. For void put, i setup to error checking if loops to
+      throw an error if value or p are null, if not bst.put. Value get would throw an error is p is null and if not 
+      return bst.get(p). Contains would throw an error if p is null if not return bst.contains(p). Iterable would return all the
+      in the table using bst.keys. For Iterable range, I made an error checker if rect was null to throw rect is null error. Then created a
+      linked queue called queue. Then a for loop to loop through the queue anf if rect has p then add it to the queue then return that queue
+      For nearest I created a error cheker if p is null then throw error. Then set answer to null, in order to return the point if it cant
+      it would just return null. Then I did runningMinDist is equal to positive infinity. Then a for a loop to loop through and attempt to find the 
+      distance. Then it would return the answer. Lastly for Iterable for the nearest I made an error checker, then created an MinPQ called pq. Then a for
+      to loop through and if p2 doesnt equal p then insert p2 into pq, Then a linkequeue is made called queue. Then it loops till empty then a tmep variable 
+      is made which is equal to pq.delmin then add that to the queue called temp queue. Then it returns the queue. 
+
+      Issues and resolution: The issues that I had like always stems from the lack of knowledge with java. For isntance the usage of
+      Point2D, RectHV, Redblackbinarysearch tree. I had to go to the Princeton page to find the paper work and how these work. Once I create a sample problem 
+      to test them, the question becomes fairly easy to do. Its as easy to just follow the instructions and find out what they are asking. The hard part is how they
+      are suppose to interact like how is nearest suppose to interact with Iterable nearest that took some time. But, stuff like that I figure out via
+      trial and error. 
+
+   Problem 2 (2dTree Implementation)
+      Approach: For this question I intilized a node called root and int called n. Then for KDpointST root is set to null and n is set to 0. Then if empty, return
+      n equal to 0. Then size() would return n which is the number of key-value pairs. Void Put, I created a RectHV rect and set its sides to Negative infinity. Then
+      root is set to put(the root value, rect and true). Get is set to get the root, p and Lr. Put has p and value passed through. A rect us created with 2 negativ infinity
+      and 2 positives. root is equal to put(root, p value, rect, and true.) The next is to Get the value, I do this with return get(root, p, ture). Contains is done via get(p)
+      doesn't equal to null. Iterable<point2D> points I created two linked queues one answer and one called algorithm. The algorithm.equeues(root). Then while algorithm doesn't 
+      equal emtpy node cur dequeues the algorithm and equeues the cur.p. If cur.lb doesn't equal null algorithm.enque cur.lib and if rt doesn't equal null eqneue it. AFter all that
+      it returns the answer queue. Interable range, I made a Linkedqueue called i and range set to (root, rect, and i) then returned i. Nearest has a eror checker if p is null and then 
+      returns nearest (root, o, nearest, lr). Iterable nearest has MaxPQ called pq and with a p.distanceotorder psssed through. Thenn it calls nearest(root, p,k.pq. lr) then returns pq.
+      Node put, if x is null add 1 to n and return new node(p, value and rect) if x.p.eual is equal to p set x.value to be value and then return x. Then we compare point p with point x.p
+      otherwise we go and coapre by their y cordinate. If its true then we call is made to x.lib if not we call x.rt. Then it inserts the given point and value into Kdtree x. The returns
+      the changed tree. For Value get, error checkers are set up to see if x is null and if x.p is equal to p. Then if is made to return the values that are at those cordinate.
+      Then for range made an error checker and used the Range() to queue the all the points. Point2D nearest created a distance variable set to positive.infitiy. If nearest not null distance
+      is squared to p, if null it would return nearest. Thus nearest is the closest point that is known so far. Node class is made with the nodes in which they each store a key, value, rect, and 
+      refrence to the other subtree nodes.  
+
+      Issues and resolution: Pretty much the same thing that I wrote for question 1, they had a similar usuage of those methods.I did struggle on the Private node put. 
+      With the if statements and how they were suppose to work. I don't know why but it took me an hour to do that part :(. I think the issue was RectHV but I kept trying with a sample
+      if statement till it worked.  
+
+5. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+   I think this project was pretty cool, since it feels like out of the projects so far that I feel like I understood how these algorithms and datasctructures work. 

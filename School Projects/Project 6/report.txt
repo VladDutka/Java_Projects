@@ -1,0 +1,64 @@
+1. Enter the number of hours it took you to complete the project between
+   the <<< and >>> signs below (eg, <<<10>>>).
+
+   <<<8>>>
+   
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+   between the <<< and >>> signs below (eg, <<<3>>>).
+
+   <<<4>>>
+
+3. Did you receive help from anyone? List their names, status (classmate, 
+   CS210 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+
+   ...                ...          ...
+
+4. Provide a short description of how you approached each problem, issues you 
+   encountered, and how you resolved those issues.
+
+   Problem 1 (WordNet Data Type)
+      Approach: I created a symbol table to map nouns using separatechaininghastst called st 
+      which would keep the synset ids, a rst tableto  map the sysnset id of the sysent string. Then
+      I put ShortestCommonAncestor object which would find the ShortestCommonAncestor. Then in the method
+      word net, I made a if statement to check if sysnset and hypernyms is null. Thne In statement to read the
+      input of 2 text files and an another statement to read the entire document. I went to create a for loop with 
+      would go line by line in the file and another loop nested inside to connect the noun to ids and the map it. 
+      Using DI graph g which would hold the map that the forloop makes. Then a string array whcih would store hypernymlines, and
+      a for loop which goes through hypernymlines. Then intlizies the SCA. Public Iterable returns the keys to the nouns. The 
+      Public String SCA returns the ShortestCommonAncestor and checks if the nouns that are selected are null. Then the Distance class 
+      which returns the length of the noun. 
+
+      Issues and resolution: I had an issue with the separatechaininghastst which I needed to look a documentation for. It was fairly simple
+      but I didn't know how it works or how to use it. There are some corner cases which my program/ code for some reason cannot addresss, and I am 
+      not sure why. 
+
+   Problem 2 (ShortestCommonAncestor Data Type)
+      Approach: The public Class ShortestCommonAncestor Digraph stores the connections between all the synsets. The method ShortestCommonAncestor
+      if g is null then throw an error. Then intlizies g. The length method has an if statement which checks if v or w are less than zero then throw 
+      an error, separatechaininghastst us made with interger callled Vst and Wst and with distform. Ancestor is used to find the shrotest common Ancestor 
+      between v and w. if no Ancestor then return 0. if it does return Ancestor sum of Vst and Wst. Ancestor method i made a for loop which goes through the vst 
+      keys and and gets their distance. If the sum of Vst and Wst is less then the minlenght then set x to i and the change the minlength to be the curretlength 
+      then it keeps going till the end and returns the x. Method length return the length of the ancestral path using triad. Ancestor method returns the triad[0] since
+      thats where the vertex of the two subsets is located. Using Separatechaininghastst i created a DistancetoV with would strore the dsitances to the v. Then a fore loop 
+      to go throught the v and add its ditances to the DistancetoV and returns it. Method triad with shortestpatha and shortestpathb set to -1 which is the closest  to the vertex
+      then a for loop with a nested for loop withcih if the length between a and b is shorter if the distance is shortest path, then using triad to store the path and return it. 
+
+      Issues and resolution: Didn't have any major issues with this question. 
+
+   Problem 3 (Outcast Data Type)
+      Approach: In class outcast I create wordnet using the wordnet variable type. Then in the method public outcast in which I construct and intilize it. In teh public outcast method
+      indexofMax which is the index of the maxium noun. Maxvalue variable finds the biggest difference between the max and low noun. Then using a for looop which goes the currentnoun which is set
+      to the noun at a certain index. And the distance is set to 0 by default. The second the for loop with goes through the second noun finds the distance between the noun that is set to currentnoun
+      and the noun that the for loop is currently looking at. If the distance that is updated is greater than the max value then set to the current index and maxvalue to be the same as the ditance. Then 
+      return the mium index of the nouns. 
+
+      Issues and resolution: This was a fairly easy program to create. 
+
+5. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+I found the project in concept to be fairly straightforward, but the coding part was really hard since I could get some cases to work while others I couldn't. 
