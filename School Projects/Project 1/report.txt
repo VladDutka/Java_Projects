@@ -1,0 +1,56 @@
+1. Enter the number of hours it took you to complete the project between
+   the <<< and >>> signs below (eg, <<<10>>>).
+
+   <<< 11 >>>
+   
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+   between <<< and >>> signs below (eg, <<<3>>>).
+
+   <<< 4 >>>
+
+3. Did you receive help from anyone? List their names, status (classmate, 
+   CS210 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+
+   ...                ...          ...
+
+4. Provide a short description of how you approached each problem, issues you 
+   encountered, and how you resolved those issues.
+
+   Problem 1 (Array Percolation)
+       Approach: My approach with the Array Percolation was following the directions and trying to understand
+       what is asking me to do. It was fairly simple to know what I needed to do but I didn't know how to open
+       the website. It wasn't hard it just took a longish time as there was a few things I didn't know what to do.
+
+       Issues and resolution: I needed to figure how to open a website. I research the correct method that would open.
+       Then I figured out how to use a for loop to count the amount it times it opened.
+
+   Problem 2 (Union Find Percolation)
+       Approach: I found this one to be very hard, simply due to me not know how to use encode and union correctly.
+       What I did is I created the variables that I needed in the Public Class. Set them equal to something in the
+       UFPercolation class. Then I created a for loop to increment every time it tried to connect and updated those
+       variables. In the open class, I cleared a bunch of if statements that would update those varibles if the website
+       was able to be opened. In the isOpen, if it wasn't then it would throw an error. In the isfull class, it would
+       throw an isFull error. percolates would return if the system would percolate or not.
+
+       Issues and resolution: my issue was with the uf and bwSolver and how to use them correctly. I figured out I
+       needed to use it with uf.union(encode) and bwSolver.union(encode). But, other than that the problem was fairly
+       straight forward it just took a long time to figure how all the parts interact with each other.
+
+   Problem 3 (Estimation of Percolation Threshold)
+       Approach: First I created the independent variables, then I created an n x n system using a for loop
+       which would then update an array called x. I created an n x n syste, and created a while to keep choosing a
+       random site. From there set up a way to calculate the percolation threshold and return those. The issue is
+       that I was not able to make the problem run due with percolation. For some reason I couldn't get new Percolation
+       (n) to be used
+
+       Issues and resolution: Was not able to make the problem run correctly.
+
+5. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+   The project was fairly hard, simply due to my knowledge of Java being fairly limited. I also found that I need to put
+   white space after every comment in check style which became very annoying when submitting the project.

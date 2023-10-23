@@ -1,0 +1,73 @@
+1. Enter the number of hours it took you to complete the project between
+   the <<< and >>> signs below (eg, <<<10>>>).
+
+   <<<10>>>
+   
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+   between <<< and >>> signs below (eg, <<<3>>>).
+
+   <<<6>>>
+
+3. Did you receive help from anyone? List their names, status (classmate,
+   CS210 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+Google              Webengine      Needed to look up the std library, Nodes, and Iterator
+   ...                ...          ...
+
+4. Provide a short description of how you approached each problem, issues you 
+   encountered, and how you resolved those issues.
+
+   Problem 1 (Deque)
+       Approach: My Approach for deque is to do some research. I watched the https://www.youtube.com/watch?v=pqg0SOPRlJ4&t=92s ,
+       in which I got a quick rundown of what a deque would look like. The first thing I did was create and itiliaze the variables
+       that I am going to be needing. this.first, this.last were set to null and n to 0. If there is nothing in dupe it would return 0.
+       Then it would return the size of dupe. Then I made so if that if would check if the item is null then throw an error. After that
+       I made it so that it makes a temp Node. In this node it stores the values, and then from there it would add it to the dupe. Then 
+       a check if the item is being added then it should be in both nodes of the dupe. The same concept works for AddLast(). In Peek first 
+       if isempy() then it would throw an error. If not it would the first item of the dupe. The same concept is with PeekLast(). Remove first 
+       and last simply get rid of the first and last item of the dupe. The returned the DequeIterator. Then refrenced the node in the Iterator
+       called Node current. Then I initialized it. Then returned the Iterator, if has more items to go through. Lasty next returned the item
+       in the current npde and then goes to the next one. 
+       Issues and resolution: The issues that I had stemmed from my lack of understanding of Deque and thats why I had to watch the youtube
+       video. It helped with visualizing what needed for this program to do. Next I had to look up what a node is and how to implement into 
+       Java. I used W3 schools for that. Lastly, the Iterator I used the Geeks for geeks article which had an explantion of what it does. Over
+       all I felt that my lack of knowledge of what different things should be, hindered me and made it that it took a long for me to do this 
+       problem. 
+
+   Problem 2 (Sorting Strings)
+       Approach: My Approach to Sorting was fairly simple make a queue named d and then a create a while loop which while the string is not empty
+       continue. Then I made it so that it reads the string, if the word came before the add to the beginning, if the word came after add it to end.
+       Else, it would remove the words that are less than w from the front and store it in a temp stack called q. Then it would add w to the front of 
+       dupe then add s to front of the dupe. Then it writes the words in standard output. 
+
+       Issues and resolution: The only issue I had was was doing some research on what I needed to be able do. So, I found that I could make a Linked
+       Stack and had to look up how to implement it. 
+
+   Problem 3 (Random Queue)
+       Approach: With random queue is that I created an array that is called q with capacity of 2. Then set n to be the size of the q. If the size
+       of the q is 0, it would return isEmpty(). size() returns n, since n is the size of the queue. Then in enqueue if the item is null, throw an 
+       error. Then if the length of the q is the same as the size (n) then it would resize it. Then increment n by one. Sample would return a random
+       int from the queue. in Deqeue it would save where the item is at a variable called index, which is also the index of the variable. Then I set
+       q[r] to q[n - 1] and q[n - 1] to null. Then return RandomQueueIterator. I create an Iterator then, Create a copy of q with length n, store it 
+       as items. Lastly I created items which had a capacity of n, copied it, then shuffled using std.random. then itiliazes current. 
+
+
+       Issues and resolution: I didn't have that much of a problem with it, I just had to loop up Std library to find how to use random. 
+
+   Problem 4 (Sampling Integers)
+       Approach: The first thing I made it so that arguments lo, hi, samples are passed as Integers and the method is accepted as a string. Then
+       a create a random queue containing integers that is from lo to hi using a for loop. Then if the method is "+" , then while number of samples
+       is bigger than 0, it replaces the sample and writes it to standard out put. If "-" then there is no replacement. Lastly, if mode not "+" or 
+       "-" throw an error. 
+
+       Issues and resolution: Honestly didn't have an issue with this. It was fairly straight forward. 
+
+5. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+   Problem 1 was by far the hardest and longest problem in this project. It took me half the time on this project was dedicated to doing this one
+   problem. I don't really have a suggestion other than perhaps somewhere on the project linking the Std library documenation that people would need
+   to use rather than google searching for it. 
